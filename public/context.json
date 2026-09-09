@@ -5,7 +5,9 @@
     "id": "peatland-rewetting-sandbox",
     "title": "Moor-Wiedervernaessung-Sandbox",
     "kind": "mechanik",
-    "repo_url": "https://github.com/GenesisAeon/peatland-rewetting-sandbox"
+    "live_url": "https://peatland-rewetting-sandbox.vercel.app",
+    "repo_url": "https://github.com/GenesisAeon/peatland-rewetting-sandbox",
+    "llms_txt_url": "https://peatland-rewetting-sandbox.vercel.app/llms.txt"
   },
   "source_package": {
     "name": "peatland-rewetting-utac",
