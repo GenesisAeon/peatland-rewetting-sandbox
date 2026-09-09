@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.2.0",
+  "generated": "2026-09-09",
+  "app": {
+    "id": "peatland-rewetting-sandbox",
+    "title": "Moor-Wiedervernaessung-Sandbox",
+    "kind": "mechanik",
+    "repo_url": "https://github.com/GenesisAeon/peatland-rewetting-sandbox"
+  },
+  "source_package": {
+    "name": "peatland-rewetting-utac",
+    "package_id": 131,
+    "version": "1.0.0",
+    "repo_url": "https://github.com/GenesisAeon/peatland-rewetting-utac",
+    "zenodo_doi": "10.5281/zenodo.22664742",
+    "ported_note": "1:1 port at source v1.0.0. No new number. No continuous formulas."
+  },
+  "primary_sources": [
+    {
+      "authors": "Guenther, A. et al.",
+      "year": 2020,
+      "title": "Prompt rewetting of drained peatlands reduces climate warming despite methane emissions",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-020-15499-z"
+    },
+    {
+      "authors": "Guenther, A. et al.",
+      "year": 2024,
+      "title": "Author Correction: Prompt rewetting of drained peatlands reduces climate warming despite methane emissions",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-024-47604-x"
+    },
+    {
+      "authors": "BMUV",
+      "year": 2022,
+      "title": "Nationale Moorschutzstrategie",
+      "journal": "bmuv.de",
+      "doi": null
+    },
+    {
+      "authors": "Kreyling, J. et al.",
+      "year": 2021,
+      "title": "Rewetting does not return drained fen peatlands to their old selves",
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-021-25619-y"
+    }
+  ],
+  "verified_quantities": [
+    {"name": "DRAINED_TEMPERATE_CO2_T_HA_YR", "value": 10.3, "unit": "t/ha/yr", "source": "Guenther 2020"},
+    {"name": "REWETTED_CO2_T_HA_YR", "value": -0.4, "unit": "t/ha/yr", "source": "Guenther 2020"},
+    {"name": "DRAINED_TEMPERATE_CH4_KG_HA_YR", "value": 7.9, "unit": "kg/ha/yr", "source": "Guenther 2020"},
+    {"name": "REWETTED_CH4_KG_HA_YR", "value": 205.9, "unit": "kg/ha/yr", "source": "Guenther 2020"},
+    {"name": "TARGET_REDUCTION_MT_CO2E_YR_BY_2030", "value": 5.0, "unit": "Mt CO2e/yr", "source": "Moorschutzstrategie DE 2022"},
+    {"name": "DRAINED_PEAT_EMISSIONS_MT_CO2E_YR", "value": 53, "unit": "Mt CO2e/yr", "source": "Moorschutzstrategie DE 2022"},
+    {"name": "SHARE_OF_GERMAN_GHG_PCT", "value": 7.5, "unit": "%", "source": "Moorschutzstrategie DE 2022"},
+    {"name": "SHANNON_REWETTED", "value": 1.46, "unit": "Shannon H'", "source": "Kreyling 2021"},
+    {"name": "SHANNON_NEAR_NATURAL", "value": 1.75, "unit": "Shannon H'", "source": "Kreyling 2021"},
+    {"name": "PCT_REWETTED_OUTSIDE_NATURAL_BIODIV_RANGE", "value": 63, "unit": "%", "source": "Kreyling 2021"},
+    {"name": "SITES_REWETTED", "value": 320, "unit": "sites", "source": "Kreyling 2021"},
+    {"name": "SITES_NEAR_NATURAL", "value": 243, "unit": "sites", "source": "Kreyling 2021"}
+  ],
+  "tipping": {
+    "kind": "undefined",
+    "value": null,
+    "unit": null,
+    "derived_from": "Not a tipping-element package; discrete flux/policy/biodiv honesty only.",
+    "defined": false,
+    "origin": "undefined"
+  },
+  "regen": {
+    "kind": "undefined",
+    "value": null,
+    "unit": null,
+    "derived_from": "Kreyling: no biodiversity convergence; no regen timescale invented.",
+    "defined": false,
+    "origin": "undefined"
+  },
+  "entropy_bg": {
+    "kind": "undefined",
+    "value": null,
+    "unit": null,
+    "derived_from": "No matching quantity in source; none invented.",
+    "defined": false,
+    "origin": "undefined"
+  },
+  "comparable": false,
+  "formula_ref": "Discrete documented values only; no continuous formula / no interpolation",
+  "honesty_checks": [
+    {"name": "isRewettingANetCo2Sink", "always_returns": true, "meaning": "Guenther 2020: rewetted CO2 = -0.4 t/ha/yr."},
+    {"name": "doesMethaneIncreaseAfterRewetting", "always_returns": true, "meaning": "Guenther 2020: CH4 7.9 -> 205.9."},
+    {"name": "doesMethaneIncreaseNegateClimateBenefit", "always_returns": false, "meaning": "If rewetting before 2050."},
+    {"name": "doesRewettingFullyRestoreOriginalBiodiversity", "always_returns": false, "meaning": "Kreyling 2021: no full restoration."},
+    {"name": "is20TonnesPerHectareFigureConfirmed", "always_returns": false, "meaning": "Unverified ~20 t figure excluded."}
+  ],
+  "framework_overlay": {"used": false, "terms": []},
+  "disclaimer": "Diskrete Guenther/Moorschutz/Kreyling-Werte. Keine ~20 t-Konstante. Kein UTAC/CREP/AFET, kein Gamma."
+}

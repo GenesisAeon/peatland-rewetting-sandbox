@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Roemer
+    given-names: Johann
+    affiliation: "MOR Research Collective"
+title: "permafrost-sandbox"
+version: "0.1.0"
+date-released: "2026-09-07"
+url: "https://github.com/GenesisAeon/permafrost-sandbox"
+repository-code: "https://github.com/GenesisAeon/permafrost-sandbox"
+license: MIT
+abstract: "Honesty-map UI for permafrost-utac (GenesisAeon P60): ESA CCI measured MAGT + Schuur 2022 carbon stock. Not a bistable tipping element. No UTAC/CREP/AFET bridge."
+keywords:
+  - GenesisAeon
+  - P60
+  - permafrost
+  - honesty-map
+  - sandbox
+references:
+  - type: software
+    title: "permafrost-utac"
+    authors:
+      - family-names: Roemer
+        given-names: Johann
+    version: "1.0.1"
+    url: "https://github.com/GenesisAeon/permafrost-utac"
+  - type: dataset
+    title: "ESA Climate Change Initiative (CCI) Permafrost, v5.0"
+    authors:
+      - name: "University of Oslo"
+    doi: "10.5285/a6fbedd8ee5b472c8e84e55f746c1704"
+  - type: article
+    title: "Permafrost and Climate Change: Carbon Cycle Feedbacks From the Warming Arctic"
+    authors:
+      - name: "Schuur, E.A.G."
+    year: 2022
+    journal: "Annual Review of Environment and Resources"
+    volume: 47
+    start: 343
+    end: 371

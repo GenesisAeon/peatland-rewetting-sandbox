@@ -1,0 +1,29 @@
+{
+  "title": "peatland-rewetting-sandbox - P131 honesty UI for peatland-rewetting-utac",
+  "description": "peatland-rewetting-sandbox - P131 honesty UI for peatland-rewetting-utac. Schema 1.2.0. No live_url. No UTAC/CREP/AFET bridge.",
+  "creators": [
+    {
+      "name": "Roemer, Johann",
+      "affiliation": "MOR Research Collective"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "0.1.0",
+  "keywords": [
+    "GenesisAeon",
+    "P131",
+    "peatland",
+    "rewetting",
+    "sandbox"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22664742",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "doi"
+    }
+  ]
+}
